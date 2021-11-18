@@ -26,7 +26,9 @@ export const Navbar = () => {
             <li>Negocios</li>
             <li>Empresas</li>
           </ul>
-          <span className="mx-2 font-medium text-black">|</span>
+          <span className="mx-2 hidden md:inline font-medium text-black">
+            |
+          </span>
           <div className="hidden text-xs font-normal md:flex items-center justify-around p-2 hover:bg-gray-900 cursor-pointer">
             <FontAwesomeIcon className="h-4 w-4" icon={faMapMarker} />
             <span className="mx-2">
