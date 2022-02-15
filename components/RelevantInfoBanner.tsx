@@ -10,14 +10,19 @@ const RelevantInfoBanner = () => {
   };
   return (
     <div
-      className={close ? "hidden" : "container mt-2 mx-auto relative h-[251px]"}
+      className={
+        close
+          ? "hidden"
+          : "container mt-2 md:px-0 px-4 mx-auto relative h-[251px] overflow-hidden "
+      }
     >
-      <Image
+      <img
         src="/fibertel-ahora-es-personal-desktop2.jpg"
-        layout="fill"
-        objectFit="contain"
-        quality={100}
+        srcSet="/fibertel-ahora-es-personal-mobile2.jpg 428w,
+        /fibertel-ahora-es-personal-desktop2.jpg 768w"
+        sizes="(min-width:640px) 100vw, 70vw"
       />
+
       <FontAwesomeIcon
         onClick={handleClose}
         className="cursor-pointer h-6 w-6 text-white absolute top-9 right-5"

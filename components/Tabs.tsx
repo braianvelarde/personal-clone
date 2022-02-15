@@ -9,7 +9,7 @@ import {
 
 const Tabs = () => {
   return (
-    <div className="flex justify-center space-x-14 my-2 scrollbar-hide overflow-x-scroll md:overflow-x-hidden">
+    <div className="flex justify-center pl-24 md:pl-0 space-x-14 my-2 scrollbar-hide overflow-x-scroll md:overflow-x-hidden">
       <div className="flex flex-col items-center hover:underline cursor-pointer">
         <FontAwesomeIcon
           className="h-10 w-10 text-black opacity-90 mb-2"

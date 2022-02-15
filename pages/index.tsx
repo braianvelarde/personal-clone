@@ -2,11 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import ContactRibbon from "../components/ContactRibbon";
+import { FlowSection } from "../components/FlowSection";
 import { Navbar } from "../components/Navbar";
 import OfferCards from "../components/OfferCards";
 import Postnavbar from "../components/Postnavbar";
 import Prenavbar from "../components/Prenavbar";
 import RelevantInfoBanner from "../components/RelevantInfoBanner";
+import { ServiceSection } from "../components/ServiceSection";
 import Tabs from "../components/Tabs";
 
 const Home: NextPage = () => {
@@ -30,6 +32,8 @@ const Home: NextPage = () => {
           Encontrá combos de internet, telefonía móvil y TV
         </p>
       </div>
+      <ServiceSection />
+      <FlowSection />
     </>
   );
 };
